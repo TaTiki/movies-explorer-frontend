@@ -1,0 +1,142 @@
+.profile {
+  background-color: white;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.profile__form {
+  width:410px;
+  align-self: center;
+}
+
+.profile__form__name {
+  text-align: center;
+  margin-top: 74px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.profile__form__info {
+  margin-top: 123px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.profile__form__field__error {
+  height: 20px;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;  
+  color: #FF4062;
+  margin-bottom: 10px;
+  display: inline-block;
+  height: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.profile__form__field {
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-items: flex-end;
+  justify-content: space-between;
+}
+
+.profile__form__field__label {
+  font-size: 11px;
+}
+
+.profile__form__field__input {
+  font-size: 11px;
+  width: 250px;
+  text-align: right;
+  text-decoration: none;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.profile__form__field__input--error {
+  color: red;
+}
+
+.profile__form__line {
+  border: none;
+  border-bottom: 1px solid #E8E8E8;
+  margin: 10px 0px 25px 0px;
+}
+
+.profile__form__info__submit {
+  font-size: 13px;
+  text-decoration: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  margin-top: 220px;
+}
+
+.profile__form__info__submit--disabled {
+  color: gray;
+  cursor: default;
+}
+
+.profile__form__logout {
+  color: red;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%,0);
+  font-size: 13px;
+  text-decoration: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  margin-top: 16px;
+}
+
+@media (max-width: 480px) {
+  .profile__form {
+    width: 260px;
+  }
+
+  .profile__form__field__input {
+    width: 150px;
+  }
+  /*.profile {
+    width: 320px;
+  }
+
+  .profile__form {
+    width: auto;
+  }
+
+  .profile__form__info {
+    margin-top: 80px;
+  }
+
+  .profile__form__field {
+    justify-content: space-around;
+  }
+  
+  .profile__form__field__input {
+    width: 230px;
+  }
+
+  .profile__form__info_submit {
+    margin-top: 379px;
+  }
+
+  .profile__form__name {
+    margin-bottom: 70px;
+  }
+
+  .profile__form__logout {
+    margin: 0 10px 40px;
+  }*/
+}

@@ -1,0 +1,79 @@
+.portfolio {
+  padding: 0px 70px 125px;
+}
+
+.portfolio__title {
+  font-size: 18px;
+  color: #A0A0A0;
+  line-height: 20px;
+}
+
+.portfolio__section {
+  margin-top: 50px;
+  padding: 0;
+}
+
+.portfolio__section__points {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-bottom: 19px;
+  list-style-type: none;
+  border-bottom: 1px solid #E8E8E8;
+}
+
+.portfolio__section__points__link {
+  text-decoration: none;
+  color: #000;
+  font-size: 30px;
+  line-height: 50px;
+  letter-spacing: -4%;
+  width: 100%;
+}
+
+.portfolio__section__points__img {
+  mask-repeat: no-repeat;
+  align-content: center;
+  float: right;
+  width: 29px;
+  height: 60px;
+}
+@media (max-width: 768px) {
+  .portfolio {
+    padding: 0px 50px 125px;
+  }
+  .portfolio__section__points__link {
+    font-size: 28px;
+  }
+
+  .portfolio__section__points__img {
+    width: 27px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio {
+    padding: 0 14px 70px;
+  }
+
+  .portfolio__title {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .portfolio__section__points {
+    margin-top: 40px;
+  }
+
+  .portfolio__section__points__link {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .portfolio__section__points__img {
+    width: 15px;
+    height: 28px;
+  }
+  
+}

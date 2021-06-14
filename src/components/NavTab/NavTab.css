@@ -1,0 +1,89 @@
+.navtab {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.navtab--opened {
+  display: block;
+}
+
+.navtab__window {
+  width: 520px;
+  height: 100%;
+  background: #FFF;
+  position: relative;
+  left: calc(100% - 520px);
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.navtab__window__close {
+  align-self: flex-end;
+  margin: 22.4px;
+  border:none;
+  background: none;
+  cursor: pointer;
+}
+
+.navtab__window__list {
+  text-align: center;
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+  text-decoration-line: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.navtab__window__list__item {
+  margin-bottom: 28px;
+}
+
+.navtab__window__list__link {
+  text-decoration: none;
+  color: #000;
+}
+
+.navtab__window__list__link--active {
+  border-bottom: 2px solid #000;
+  padding-bottom: 3px;
+}
+
+.navtab__window__account {
+  width: 100px;
+  height: 32px;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: none;
+  font-size: 13px;
+  margin-bottom: 30px;
+}
+
+.navtab__window__account__icon {
+  margin-left: 14.81px;
+}
+
+@media (max-width: 520px) {
+  .navtab__window {
+    width: 320px;
+    left: calc(100% - 320px);
+  }
+
+  .navtab__window__list__item {
+    margin-bottom: 24px;
+  }
+}

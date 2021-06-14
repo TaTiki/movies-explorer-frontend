@@ -1,0 +1,77 @@
+.header {
+  height: 74px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.header__home {
+  background: none;
+  border: none;
+}
+
+.header__home__logo {
+  height: 38px;
+  width: 38px;
+  cursor: pointer;
+}
+
+.header__buttons {
+  display: flex;
+  justify-content: right;
+}
+
+.header__buttons__login {
+  background: #000000;
+  border-radius: 3px;
+  color: white;
+  text-decoration: none;
+  border: none;
+  width: 76px;
+  height: 32px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+.header__buttons__signup {
+  background: none;
+  text-decoration: none;
+  border: none;
+  margin-left: 20px;
+  font-size: 12px;
+  cursor: pointer;
+  padding: 0px;
+}
+
+.header__tab {
+  background: none;
+  border: none;
+}
+
+.header__tab__icon {
+  height: 44px;
+  width: 44px;
+  cursor: pointer;
+}
+
+@media (max-width:768px) {
+  .header {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header__tab__icon {
+    width: 40px;
+    height: 43px;
+  }
+
+  .header {
+    padding: 0 14px;
+  }
+}
