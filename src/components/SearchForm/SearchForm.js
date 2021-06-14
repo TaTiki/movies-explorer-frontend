@@ -10,7 +10,7 @@ export default function SearchForm() {
       <div className = "searchform__search">
         <img className = "searchform__search__lupa" src={smallLupa} alt="маленькая лупа"/>
         <input className = "searchform__search__input" placeholder="Фильм"/>
-        <button className = "searchform__search__button"onClick={() => alert('not implemented')}>
+        <button className = "searchform__search__button" onClick={() => alert('not implemented')}>
           <img src={blackLupa} alt = "большая лупа"/>
         </button>
       </div>

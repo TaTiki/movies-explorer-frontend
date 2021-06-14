@@ -108,35 +108,4 @@
   .profile__form__field__input {
     width: 150px;
   }
-  /*.profile {
-    width: 320px;
-  }
-
-  .profile__form {
-    width: auto;
-  }
-
-  .profile__form__info {
-    margin-top: 80px;
-  }
-
-  .profile__form__field {
-    justify-content: space-around;
-  }
-  
-  .profile__form__field__input {
-    width: 230px;
-  }
-
-  .profile__form__info_submit {
-    margin-top: 379px;
-  }
-
-  .profile__form__name {
-    margin-bottom: 70px;
-  }
-
-  .profile__form__logout {
-    margin: 0 10px 40px;
-  }*/
 }
