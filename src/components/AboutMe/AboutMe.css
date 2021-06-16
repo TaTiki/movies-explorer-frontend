@@ -1,0 +1,131 @@
+.aboutme {
+  padding: 110px 70px 101px;
+}
+
+.aboutme__title {
+  font-weight: 400;
+  font-size: 22px;
+  padding-bottom: 23px;
+  border-bottom: 1px #000 solid;
+}
+
+.aboutme__section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 66px;
+}
+
+.aboutme__section__pic {
+  height: 327px;
+  width: 270px;
+  border-radius: 10px;
+}
+
+.aboutme__section__text__heading {
+  font-size: 58px;
+  font-weight: 400;
+  margin: 0px;
+}
+
+.aboutme__section__text {
+  padding-right: 24%;
+}
+
+.aboutme__section__text__intro {
+  margin-top: 18px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.aboutme__section__text__cv {
+  margin-top: 26px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.aboutme__section__text__social {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+}
+
+.aboutme__section__text__social__item {
+  margin-right: 20px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+}
+
+@media (max-width:768px) {
+  .aboutme {
+    padding: 90px 50px;
+  }
+
+  .aboutme__section__text__cv {
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 20px;
+  }
+
+  .aboutme__section__text__heading {
+    font-size: 40px;
+  }
+
+  .aboutme__section__text {
+    padding-right: 9%;
+  }
+
+  .aboutme__section__pic {
+    width: 255px;
+    height: 307px;
+  }
+
+  .aboutme__section__text__social {
+    margin-top: 71px;
+  }
+
+  .aboutme__section__text__intro {
+    margin-top: 16px;
+  }
+}
+
+@media (max-width:480px) {
+
+  .aboutme {
+    padding: 70px 14px;
+  }
+  .aboutme__section {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+
+  .aboutme__section__pic {
+    width: 292px;
+    height: 352px;
+  }
+
+  .aboutme__section__text__heading {
+    font-size: 30px;
+    margin-top: 40px;
+    font-weight: 400;
+  }
+
+  .aboutme__section__text__intro {
+    font-size: 11px;
+    line-height: 16px;
+    margin-top: 20px;
+  }
+
+  .aboutme__section__text__cv {
+    font-size: 11px;
+    line-height: 16px;
+    margin-top: 20px;
+  }
+
+  .aboutme__section__text__social {
+    margin-top: 40px;
+  }
+}

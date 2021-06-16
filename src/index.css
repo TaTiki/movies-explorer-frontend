@@ -1,0 +1,16 @@
+@import url(./vendor/fonts.css);
+
+body {
+  margin: 0px;
+  padding: 0px;
+  /*display: flex;
+  justify-content: center;*/
+  font-family: 'Inter';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

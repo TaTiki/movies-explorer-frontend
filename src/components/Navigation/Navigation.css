@@ -1,0 +1,31 @@
+.navigation {
+  display: flex;
+  justify-content: right;
+}
+
+.navigation__register {
+  background: none;
+  text-decoration: none;
+  border: none;
+  margin-left: 20px;
+  font-size: 12px;
+  cursor: pointer;
+  padding: 0px;
+}
+
+.navigation__account {
+  width: 100px;
+  height: 32px;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: none;
+  font-size: 13px;
+  margin-left: 50px;
+}
+
+.navigation__icon {
+  margin-left: 14.81px;
+}
