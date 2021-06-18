@@ -1,0 +1,13 @@
+.movies__notfound {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  color: gray;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .movies__notfound {
+    font-size: 12px;
+  }
+}

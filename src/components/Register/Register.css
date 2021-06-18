@@ -72,6 +72,18 @@
   margin-bottom: 10px;
 }
 
+.register__form__servererror {
+  height: 20px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 12px;  
+  color: gray;
+  margin-top: 60px;
+  margin-bottom: 9px;
+  justify-content: center;
+  display: flex;
+}
+
 .register__form__button {
   background-color: #000;
   color: #fff;
@@ -81,7 +93,6 @@
   border: none;
   border-radius: 3px;
   font-weight: 500;
-  margin-top: 69px;
   padding: 0px;
   cursor: pointer;
 }
@@ -104,6 +115,10 @@
 
   .register__home {
     align-self: center;
+  }
+
+  .register__form__servererror {
+    font-size: 12px;
   }
 
   .register__title {
