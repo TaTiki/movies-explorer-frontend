@@ -100,7 +100,10 @@ export default function Register({ handleRegister }) {
         <span className="register__form__error">{fields[2].error}</span>
         
         <span className="register__form__servererror">{serverError}</span>
-        <button className={'register__form__button' + (disabled ? ' register__form__button--disabled' : '')} type="submit" disabled={disabled}>Зарегистрироваться</button>
+        <button
+        className={'register__form__button' + (disabled ? ' register__form__button--disabled' : '')}
+        type="submit"
+        disabled={disabled}>Зарегистрироваться</button>
       </form>
       <div className="register__redirect">
         <p>Уже зарегистрированы? <Link className="register__redirect__link" to='/signin'>Войти</Link></p>

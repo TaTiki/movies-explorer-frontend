@@ -30,15 +30,22 @@ export default function NavTab({ isOpen, onClose }) {
         <button className = "navtab__window__close" onClick={handleClick}><img src={closeNav} alt="закрыть"/></button>
         <ul className = "navtab__window__list">
           <li className= "navtab__window__list__item">
-            <button className={'navtab__window__list__link' + (pathname === '/' ? ' navtab__window__list__link--active': '')} name="main" onClick={handleClick}>
+            <button
+            className={'navtab__window__list__link' + (pathname === '/' ? ' navtab__window__list__link--active': '')}
+            name="main"
+            onClick={handleClick}>
             Главная</button>
           </li>
           <li className= "navtab__window__list__item">
-            <button className={'navtab__window__list__link' + (pathname === '/movies' ? ' navtab__window__list__link--active': '')} name="movies" onClick={handleClick}>
+            <button className={'navtab__window__list__link' + (pathname === '/movies' ? ' navtab__window__list__link--active': '')}
+            name="movies"
+            onClick={handleClick}>
             Фильмы</button>
           </li>
           <li className= "navtab__window__list__item">
-            <button className={'navtab__window__list__link' + (pathname === '/saved-movies' ? ' navtab__window__list__link--active': '')} name="saved-movies" onClick={handleClick}>
+            <button className={'navtab__window__list__link' + (pathname === '/saved-movies' ? ' navtab__window__list__link--active': '')}
+            name="saved-movies"
+            onClick={handleClick}>
             Сохраненные фильмы</button>
           </li>
         </ul>

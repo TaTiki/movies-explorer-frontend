@@ -83,5 +83,5 @@ class MainApi {
   }
 }
 
-export default new MainApi('http://localhost:5000');
+export default new MainApi('https://api.mata.hari.nomoredomains.icu');
 export { MainApi };

@@ -107,7 +107,10 @@ export default function Movies({ myFilms, addFilm, removeFilm }) {
       <Preloader active={active}/>
       <Header/>
       <SearchForm word={keyword} setWord={setKeyword} short={short} setShort={setShort} alwaysEnabled={false}/>
-      {serverError && <span className="movies__notfound">Во время запроса произошла ошибка. Возможно, проблема с соединением или сервер недоступен. Подождите немного и попробуйте ещё раз.</span>}
+      {serverError && 
+      <span className="movies__notfound">
+        Во время запроса произошла ошибка. Возможно, проблема с соединением или сервер недоступен. Подождите немного и попробуйте ещё раз.
+      </span>}
       { keyword && !renderedFilms.length ?
       <span className = "movies__notfound">Ничего не найдено</span> :
       <MoviesCardList films={renderedFilms} handleShowMore={handleShowMore} hideButton={hideButton} addFilm={addFilm} removeFilm={removeFilm}/>

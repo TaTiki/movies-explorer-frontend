@@ -45,7 +45,6 @@ export default function Login({ handleLogin }) {
     evt.preventDefault();
     setDisabled(true);
     setDisabledInput(true);
-    //CHECK IF ALL VALID
     handleLogin(fields[0].value, fields[1].value)
     .then(() => history.push('/movies'))
     .catch((err) => {

@@ -109,6 +109,8 @@ export default function App() {
 
   const handleSignOut = () => {
     localStorage.removeItem('JWT');
+    localStorage.removeItem('movieFilters');
+    localStorage.removeItem('savedMovieFilters');
     setJWT('');
     setUser({});
     history.push('/');
@@ -132,11 +134,23 @@ export default function App() {
           <Route path='/signup'>
             <Register handleRegister={handleRegister}/>
           </Route>
-          <ProtectedRoute path='/profile' component={Profile} to='/' condition={user._id} handleUpdateUser={handleUpdateUser} handleSignOut={handleSignOut}/>
+          <ProtectedRoute path='/profile'
+          component={Profile}
+          to='/'
+          condition={user._id}
+          handleUpdateUser={handleUpdateUser}
+          handleSignOut={handleSignOut}/>
           <Route exact path = '/'>
             <Main/>
           </Route>
-          <ProtectedRoute path='/movies' component={Movies} to="/" myFilms={myFilms} setMyFilms={setMyFilms} addFilm={handleAddFilm} removeFilm={handleRemoveFilm} condition={user._id}/>
+          <ProtectedRoute path='/movies'
+          component={Movies}
+          to="/"
+          myFilms={myFilms}
+          setMyFilms={setMyFilms}
+          addFilm={handleAddFilm}
+          removeFilm={handleRemoveFilm}
+          condition={user._id}/>
           <ProtectedRoute path='/saved-movies' component={SavedMovies} to="/" films={myFilms} removeFilm={handleRemoveFilm} condition={user._id}/>
           <Route path="*">
             <NotFound/>

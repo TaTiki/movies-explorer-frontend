@@ -56,7 +56,9 @@ export default function MoviesCard({ film, addFilm, removeFilm }) {
       <div className = "moviescard__state">
         {
           film.state === 0 ?
-          <button className="moviescard__state__button" onClick={handleRemoveFilm} disabled={disabled}><img className="moviescard__state__button__img" src={redButton} alt="галочка" /></button> : film.state === 1 ?
+          <button className="moviescard__state__button" onClick={handleRemoveFilm} disabled={disabled}>
+            <img className="moviescard__state__button__img" src={redButton} alt="галочка" />
+          </button> : film.state === 1 ?
           <button className="moviescard__state__button" onClick={handleAddFilm} disabled={disabled}>Сохранить</button> :
           <button className="moviescard__state__button" onClick={handleRemoveFilm} disabled={disabled}><img src={xIcon} alt="удалить"/></button>
         }
