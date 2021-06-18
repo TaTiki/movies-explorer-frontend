@@ -24,7 +24,7 @@ export default function Header() {
         <img className="header__home__logo" src={logo} alt="Логотип"/>
       </button>
       {
-        !user ?
+        !user.name ?
         <div className="header__buttons">
           <button className="header__buttons__signup" onClick={() => history.push('/signup')}>Регистрация</button>
           <button className="header__buttons__login" onClick={() => history.push('/signin')}>Войти</button>

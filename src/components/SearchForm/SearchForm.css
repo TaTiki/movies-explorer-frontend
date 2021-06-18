@@ -38,6 +38,18 @@
   margin-top: 15px;
 }
 
+.searchform__servererror {
+  height: 20px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 12px;  
+  color: gray;
+  margin-top: 60px;
+  margin-bottom: 9px;
+  justify-content: center;
+  display: flex;
+}
+
 .searchform__box__mini {
   font-size: 14px;
   font-weight: 400;

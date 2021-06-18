@@ -1,23 +1,43 @@
+import { useEffect, useState } from 'react';
+
 import Header from '../Header/Header';
 import SearchForm from '../SearchForm/SearchForm';
 import MoviesCardList from '../MoviesCardList/MoviesCardList';
 import Footer from '../Footer/Footer';
+import { filterFilms } from '../../utils/filmHelpers';
 
-import films from '../../utils/films';
 
-const states = [2, 2, 2, 1, 1, 0, 0, 1, 1, 1, 0, 1];
+export default function SavedMovies({ films, removeFilm }) {
 
-const filmsWithState = () => films.map((film, idx) => {
-  film.state=states[idx];
-  return film;
-});
+  const [filteredFilms, setFilteredFilms] = useState([]);
+  const [keyword, setKeyword] = useState('');
+  const [short, setShort]= useState(false);
 
-export default function SavedMovies() {
+  useEffect(() => {
+    const filters = localStorage.getItem('savedMovieFilters');
+    if (filters) {
+      const { keyword, short } = JSON.parse(filters);
+      setKeyword(keyword);
+      setShort(short);
+    }
+  }, []);
+
+  useEffect(() => {
+    const filteredFilms = filterFilms(films, { keyword, short });
+    setFilteredFilms(filteredFilms);
+  }, [keyword, short, films]);
+
+  useEffect(() => {
+    if (keyword || short) {
+      localStorage.setItem('savedMovieFilters', JSON.stringify({ keyword, short }));
+    }
+  }, [keyword, short]);
+  
   return (
     <>
       <Header/>
-      <SearchForm/>
-      <MoviesCardList films={filmsWithState().slice(0,3)}/>
+      <SearchForm word={keyword} setWord={setKeyword} short={short} setShort={setShort} alwaysEnabled={true}/>
+      <MoviesCardList films={filteredFilms} hideButton={true} removeFilm={removeFilm}/>
       <Footer/>
     </>
   );

@@ -24,6 +24,7 @@
 .moviescard__poster {
   width: 360px;
   height: 200px;
+  cursor: pointer;
 }
 
 .moviescard__info__title {
@@ -40,17 +41,29 @@
 
 .moviescard__state {
   margin-top: 18px;
-  margin-bottom: 18px;
+  margin-bottom: 10px;
 }
 
 .moviescard__state__button {
   width: 100px;
   height: 29px;
-  border-radius: 30px;
+  border-radius: 38px;
   background: #F9F9F9;
   border: none;
   font-size: 12px;
   cursor: pointer;
+}
+
+.moviescard__state__button__img {
+  width: 100px;
+  height: 25px;
+}
+
+.moviescard__state__error {
+  font-size: 12px;
+  color: grey;
+  margin: 0;
+  padding: 0;
 }
 
 @media (max-width:900px) {

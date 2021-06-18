@@ -23,6 +23,10 @@
   border: 1px solid;
 }
 
+.moviescard__button--hidden {
+  display: none;
+}
+
 @media (max-width:900px) {
   .moviecard__list {
     padding: 0px 18px 50px;

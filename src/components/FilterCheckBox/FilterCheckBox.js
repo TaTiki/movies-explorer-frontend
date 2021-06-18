@@ -1,9 +1,6 @@
 import './FilterCheckBox.css';
 
-import { useState } from 'react';
-
-export default function FilterCheckBox() {
-  const [isChecked, setIsChecked] = useState(false);
+export default function FilterCheckBox({ isChecked, setIsChecked, disabled}) {
   return (
     <>
       <input
@@ -12,6 +9,7 @@ export default function FilterCheckBox() {
         type="checkbox"
         id="react-switch-new"
         onChange={() => setIsChecked(!isChecked)}
+        disabled={disabled}
       />
       <label
         style={{ background: isChecked && '#06D6A0' }}

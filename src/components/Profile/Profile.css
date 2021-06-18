@@ -39,6 +39,18 @@
   padding: 0;
 }
 
+.profile__form__servererror {
+  height: 20px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 12px;  
+  color: gray;
+  margin-top: 180px;
+  margin-bottom: 40px;
+  justify-content: center;
+  display: flex;
+}
+
 .profile__form__field {
   display: flex;
   flex-direction: row;
@@ -78,7 +90,6 @@
   background: none;
   cursor: pointer;
   padding: 0;
-  margin-top: 220px;
 }
 
 .profile__form__info__submit--disabled {
@@ -107,5 +118,9 @@
 
   .profile__form__field__input {
     width: 150px;
+  }
+
+  .profile__form__servererror {
+    font-size: 12px;
   }
 }

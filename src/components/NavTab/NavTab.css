@@ -53,6 +53,9 @@
 .navtab__window__list__link {
   text-decoration: none;
   color: #000;
+  background: none;
+  border: none;
+  font-size: 18px;
 }
 
 .navtab__window__list__link--active {
